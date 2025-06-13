@@ -12,8 +12,7 @@ import org.springframework.stereotype.Service;
 public class OpenAIService {
 
   private static final String API_URL = "https://api.openai.com/v1/chat/completions";
-  private static final String API_KEY =
-      "TwUbI6FdjpghupNh18aZRjDdwmTZwxIjlJ54FdtA2pXlNXPCXlPi5gt3y2sCGYitY1czEgrUQoT3BlbkFJjyWHfcLOpYILfrlV8pbfv1SN2rqrUgKifWbfH-5FuWXGhPOxHAVDJPf6Zd3bo_71gf6imrUkgA";
+  private static final String API_KEY = System.getenv("OPENAI_API_KEY");
 
   public String getMalagasyDefinition(String word) throws Exception {
     String prompt = "Hazavao amin'ny teny malagasy ny dikan'ny teny: " + word;
