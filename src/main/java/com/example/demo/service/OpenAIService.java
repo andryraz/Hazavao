@@ -18,7 +18,6 @@ public class OpenAIService {
   public String getMalagasyDefinition(String word) throws Exception {
     String prompt = "Hazavao amin'ny teny malagasy ny dikan'ny teny: " + word;
 
-
     String requestBody =
         """
         {
